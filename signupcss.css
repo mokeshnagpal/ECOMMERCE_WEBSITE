@@ -1,0 +1,74 @@
+th.logo
+{
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+th.web
+{
+	text-align: center;
+  font-family: cursive;
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+input 
+{
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
+  border-color: #FFFFFF #327CB5 #327CB5 #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 3px #333333;
+  color: #000000;
+}
+td
+{
+  padding-bottom: 10px;
+	text-align: left;
+}
+td.but
+{
+  text-align: center;
+  padding-top: 50px;
+}
+td.log
+{
+  text-align: center;
+  padding-bottom: 20px;
+}
+#disp
+{
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+}
+td.logo
+{
+  text-align: center;
+}
+table
+{
+  border: 2px; 
+  border-color: #d9d9d9;
+  border-radius: 10px;
+  border-style: solid;
+}
+button
+{
+   border-radius: 5px;
+   background-color: #b3ecff;
+   font-weight: bolder;
+   color: white;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 125px;
+   padding-right: 130px;
+}
+img
+{
+  width: 30%;
+}

@@ -1,0 +1,1046 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="sitelogic.js"></script>
+	<link rel="stylesheet" type="text/css" href="sitestyle.css"/>
+	<title>M_Art.com</title>
+</head>
+<body>
+	<header id="top">
+		<nav class="line1">
+			<div class="logo-location">
+				<span class="logo"><img class="logo" src="logo.jpg" onclick="self()" /></span>
+				<a href="location.html" class="location" onclick="loca()">
+					<table class="location">
+						<tr>
+							<td rowspan="2" valign="center">
+								<img src="location.jpg" class="location"/>
+							</td>
+							<td>Deliver to <span class="location">Mokesh</span></td>
+						</tr>
+						<tr>
+							<td>
+								<b>Phagwara-144111</b>
+							</td>
+						</tr>
+					</table>
+				</a>
+			</div>
+			<div class="search">
+				<table class="search">
+						<tr>
+							<td align="center" valign="center" class="dropdown" onmouseover="all_arrow_focus()" onmouseleave="all_arrow_blur()">
+								<span class="drop-button">
+									<span class="All" id="All">All</span>
+									<img src="all_arrow_blur.jpg" class="arrow" id="all_arrow"/>
+								</span>
+								<div class="dropdown-content">
+									<div class="drop-val-change" onclick="document.getElementById('All').innerHTML='All'">
+										All
+									</div>
+									<div class="drop-val-change" onclick="document.getElementById('All').innerHTML='Microprocessors'">
+  						   					Microprocessors
+  						   			</div>
+							    	<div class="drop-val-change" onclick="document.getElementById('All').innerHTML='Microcontrollers'">
+							    			Microcontrollers
+							    	</div>
+ 	  								<div class="drop-val-change" onclick="document.getElementById('All').innerHTML='Sensors'">
+ 	  										Sensors
+ 	  								</div>
+ 	  							</div>
+							</td>
+							<td align="center" valign="center">
+								<input type="search" id="inp" size="100%" class="search" placeholder="Search M_art" />
+							</td>
+							<td align="center" valign="center" onmouseover="search_focus()" onmouseleave="search_blur()">
+								<button class="search">
+									<img src="search_blur.jpg" class="search" id="search_button"/>
+								</button>
+							</td>
+						</tr>
+				</table>		
+			</div>		
+			<div class="lang">
+			<span class="lang-button">
+					<span class="lang-val-default" id="lang-val-default">
+						EN
+					</span>
+					<img src="arrow.jpg" class="arrow"/>
+			</span>
+			<div class="lang-dropdown">
+				<div class="lang-val" onclick="document.getElementById('lang-val-default').innerHTML='EN'">
+   					<input type="radio" id="a" name="lan" checked="true" />
+ 					<label for="a">
+    					EN
+    				</label>
+    			</div>
+   				<div class="lang-val" onclick="document.getElementById('lang-val-default').innerHTML='RU'">
+    				<input type="radio" id="b" name="lan" id="val2"/>
+    				<label for="b">
+    					RU
+    				</label>
+    			</div>
+   				<div class="lang-val" onclick="document.getElementById('lang-val-default').innerHTML='FR'">
+    				<input type="radio" id="c" name="lan" id="val3"/>
+   					<label for="c">
+  						FR
+    				</label>
+    			</div>
+			</div>
+			</div>
+			<span class="account">
+				<table>
+					<tr>
+						<td align="left">
+							Hello
+							<i>Mokesh</i>
+							</td>
+					</tr>
+					<tr>
+						<td align="left" style="font-weight: bolder;" onclick="order()">
+							Accounts & Lists
+							<img src="arrow.jpg" class="arrow"/>
+						</td>
+						</tr>
+				</table>
+			</span>
+			<span class="order">
+				<table>
+					<tr>
+						<td align="left">
+							<i>Orders</i>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="font-weight: bolder;" onclick="order()">
+							& Returns
+						</td>
+					</tr>
+				</table>
+			</span>
+			<span class="cart">
+				<img src="cart.jpg" class="cart" onclick="cart()"/>
+			</span>
+		</nav>
+		<nav class="line2">
+			<div class="All2">
+				<div class="All2-hamburger">
+					<div class="hamburger"></div>
+					<div class="hamburger"></div>
+					<div class="hamburger"></div>
+				</div>
+				<span class="All2">
+						All
+				</span>
+			</div>
+			<span class="todaysdeal">
+				Today's Deal
+			</span>
+			<span class="buyagain">
+				Buy Again
+			</span>
+			<span class="customerservice">
+				Customer Service
+			</span>
+			<span class="giftcards">
+				Gift Cards
+			</span>
+			<span class="registry">
+				Registry
+			</span>
+			<span class="sell">
+				Sell
+			</span>
+		</nav>
+	</header>
+	<div class="slideshow-container">
+		<div class="mySlides fade" onclick="window.open('Z:/PROJECTS/WEBSITE/WEBSITE/SITE/site.html','_self');">
+	  	<div class="numbertext">1 / 3</div>
+	  	<img src="img_nature_wide.jpg" class="slide-img">
+		</div>
+		<div class="mySlides fade" onclick="window.open('Z:/PROJECTS/WEBSITE/WEBSITE/SITE/site.html','_self');">
+	  <div class="numbertext">2 / 3</div>
+	  		<img src="img_snow_wide.jpg" class="slide-img">
+		</div>
+		<div class="mySlides fade" onclick="window.open('Z:/PROJECTS/WEBSITE/WEBSITE/SITE/site.html','_self');">
+	  	<div class="numbertext">3 / 3</div>
+	  	<img src="img_mountains_wide.jpg" class="slide-img">
+		</div>
+		<a class="prev" onclick="plusSlides(-2)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(0)">&#10095;</a>
+	</div>
+	<script>
+		var t;
+	let slideIndex = 0;
+	showSlides();
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  if (slideIndex >= slides.length) {slideIndex = 0}    
+	  if (slideIndex < 0) {slideIndex = slides.length-1}  
+	  slides[slideIndex].style.display = "block";  
+
+	  t=setTimeout(showSlides, 5000); // Change image every 2 seconds
+	  slideIndex++;
+	}
+	function plusSlides(s) {
+		slideIndex += s;
+		clearTimeout(t);
+	  showSlides();
+	}
+	</script>
+	<div align="center" class="main">
+		<table class="table-on-image" cellspacing="30px">
+			<tr>
+				<td colspan="4" class="box-on-image" align="center">
+					You are on M_Art.com. You can also shop on M_Art India for millions of products with fast local delivery. 
+					<a href="#" style="color: blue;">Click here to go to M_art.in</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="pick-where-you-left">
+						<tr>
+							<td colspan="2" class="caption">Pick where you left off</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="pick-where-you-left-image" /></td>
+							<td><img src="image.png" class="pick-where-you-left-image" /></td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="pick-where-you-left-image" /></td>
+							<td><img src="image.png" class="pick-where-you-left-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="keep-shopping-for">
+						<tr>
+							<td class="caption">Keep shopping for</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="keep-shopping-for-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="get-fit-at-home">
+						<tr>
+							<td class="caption">Get fit at home</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="get-fit-at-home-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="shop-by-category">
+						<tr>
+							<td colspan="2" class="caption">Pick where you left off</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="shop-by-category-image" /></td>
+							<td><img src="image.png" class="shop-by-category-image" /></td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="shop-by-category-image" /></td>
+							<td><img src="image.png" class="shop-by-category-image" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="dresses">
+						<tr>
+							<td class="caption">Dresses</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="dresses-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="easy-return">
+						<tr>
+							<td class="caption">Easy return</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="easy-return-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="electronics">
+						<tr>
+							<td class="caption">Get fit at home</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="electronics-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="top-deal">
+						<tr>
+							<td class="caption">Top deal</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="top-deal-image" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="fp-caption">
+					<div class="caption">Frequently repurchased</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="fp">
+					<div class="frequently-purchased-container" id="frequently-purchased-scroll">
+			  		<div class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+					    <img src="image.png" class="frequently-purchased">
+			  		</div>
+					</div>
+					<button class="frequently-purchased-button-left" onclick="frequently_purchased_button_left()">&#10094;</button>
+			  		<button class="frequently-purchased-button-right" onclick="frequently_purchased_button_right()">&#10095;</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bsk-caption">
+					<div class="caption">Best Seller</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bsk">
+					<div class="best-seller-kitchen-container" id="best-seller-kitchen-scroll">
+			  		<div class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+					    <img src="image.png" class="best-seller-kitchen">
+			  		</div>
+					</div>
+					<button class="best-seller-kitchen-button-left" onclick="best_seller_kitchen_button_left()">&#10094;</button>
+			  		<button class="best-seller-kitchen-button-right" onclick="best_seller_kitchen_button_right()">&#10095;</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="strip-lights">
+						<tr>
+							<td class="caption">Create with strip lights</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="strip-lights-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="holiday-home">
+						<tr>
+							<td colspan="2" class="caption">A holiday home starts here</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="holiday-home-image" /></td>
+							<td><img src="image.png" class="holiday-home-image" /></td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="holiday-home-image" /></td>
+							<td><img src="image.png" class="holiday-home-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="smartwatches">
+						<tr>
+							<td class="caption">Shop activity trackers and smartwatches</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="smartwatches-image" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="fitness">
+						<tr>
+							<td class="caption">For your Fitness Needs</td>
+						</tr>
+						<tr>
+							<td><img src="image.png" class="fitness-image" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<tr>
+				<td colspan="4" class="bsc-caption">
+					<div class="caption">Best Sellers in Cell Phones & Accessories</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bsc">
+					<div class="best-seller-cellphone-container" id="best-seller-cellphone-scroll">
+			  		<div class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+					    <img src="image.png" class="best-seller-cellphone">
+			  		</div>
+					</div>
+					<button class="best-seller-cellphone-button-left" onclick="best_seller_cellphone_button_left()">&#10094;</button>
+			  		<button class="best-seller-cellphone-button-right" onclick="best_seller_cellphone_button_right()">&#10095;</button>
+				</td>
+			</tr>
+			<td colspan="4" class="bsb-caption">
+					<div class="caption">Best Sellers in books</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bsb">
+					<div class="best-seller-books-container" id="best-seller-books-scroll">
+			  		<div class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+					    <img src="image.png" class="best-seller-books">
+			  		</div>
+					</div>
+					<button class="best-seller-books-button-left" onclick="best_seller_books_button_left()">&#10094;</button>
+			  		<button class="best-seller-books-button-right" onclick="best_seller_books_button_right()">&#10095;</button>
+				</td>
+			</tr>
+			<td colspan="4" class="bss-caption">
+					<div class="caption">Best Sellers in Sports & Outdoors</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bss">
+					<div class="best-seller-sports-container" id="best-seller-sports-scroll">
+			  		<div class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+					    <img src="image.png" class="best-seller-sports">
+			  		</div>
+					</div>
+					<button class="best-seller-sports-button-left" onclick="best_seller_sports_button_left()">&#10094;</button>
+			  		<button class="best-seller-sports-button-right" onclick="best_seller_sports_button_right()">&#10095;</button>
+				</td>
+			</tr>
+			<td colspan="4" class="bro-caption">
+					<div class="caption">Browsing history&nbsp;<a href="#" style="font-size: small;color: blue;">View or edit your browsing history</a></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bro">
+					<div class="bro-container" id="bro-scroll">
+			  		<div class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+					    <img src="image.png" class="bro">
+			  		</div>
+					</div>
+					<button class="bro-button-left" onclick="bro_button_left()">&#10094;</button>
+			  		<button class="bro-button-right" onclick="bro_button_right()">&#10095;</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<div class="back-to-top" align="center" onclick="window.open('C:\\Users\\mokesh\\OneDrive\\Desktop\\WEBSITE\\SITE\\site.html','_self');">Back to top</div>
+		<div class="footer-detail" align="center">
+			<table class="footer-detail">
+				<tr>
+					<td class="footer-detail">Get to Know Us</td>
+					<td class="footer-detail">Make Money with Us</td>
+					<td class="footer-detail">M_Art Payment Products</td>
+					<td class="footer-detail">Let Us Help You</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>Careers</td>
+					<td>Sell Products on M_Art</td>
+					<td>M_Art Buisness Card</td>
+					<td>M_Art and COVID-19</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>Blog</td>
+					<td>Sell on M_Art Buisness</td>
+					<td>Shop with Points</td>
+					<td>Your Account</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>About M_Art</td>
+					<td>Sell Apps on M_Art</td>
+					<td>Reload Your balence</td>
+					<td>Your Order</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>Careers</td>
+					<td>Sell products on M_Art</td>
+					<td>M_Art buisness card</td>
+					<td>M_Art and COVID-19</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>Investors Relation</td>
+					<td>Becomes an Affiliate</td>
+					<td>M_Art Currency Converter</td>
+					<td>Shipping Rates & Policies</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>M_Art Devices</td>
+					<td>Advertise Your Products</td>
+					<td></td>
+					<td>Returns & Replacements</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td>M_Art Science</td>
+					<td>Self Publish with Us</td>
+					<td></td>
+					<td>Manage Your Content and Devices</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td></td>
+					<td>See More Make Money with Us</td>
+					<td></td>
+					<td>M_Art Assistant</td>	
+				</tr>
+				<tr class="footer-detail">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Help</td>	
+				</tr>
+			</table>
+		</div>
+		<hr class="footer-detail2"/>
+		<div class="footer-detail2" align="center">
+			<table>
+				<tr>
+					<td>
+						<span class="footer-logo"><img class="logo" src="footer-logo.png" onclick="self()" /></span>
+					</td>
+					<td>
+						<button class="footer-detail2-lang">English</button>
+					</td>
+					<td>
+						<button class="footer-detail2-currency">INR - Indian Rupees</button>
+					</td>
+					<td>
+						<button class="footer-detail2-country">United States</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="footer-detail3" align="center">
+			<table class="footer-detail3">
+				<tr class="footer-detail3-1">
+					<td class="footer-detail3">
+						<a href="#"><table class="footer-detail3-11">
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Music</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Stream millions of songs</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Advertising</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Find, attract and engage customer</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Drive</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Cloud Storage from M_Art</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">6pm</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Score deals on fashion brands</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">AbeBooks</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Books, arts & collectibles</td>
+							</tr>
+							</table>
+					</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">ACX</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Audiobook Publishing Made easy</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Sell on M_Art</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Start a Selling Account</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+				</tr>
+				<tr class="footer-detail3-2">
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Buisness</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Everything for Your Buisness</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Fresh</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Groceries & More Right to Your Doorstep</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Global</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Ship Orders Internationally</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Home Services</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Experienced Pros Happiness Guarantee</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Ignite</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Sell your original Digital Educational Resources</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Web Services</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Scalable Cloud Computing Services</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Audible</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Listen to Books & Original Audio Performances</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+				</tr>
+				<tr class="footer-detail3-3">
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Book Depository</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Books With Free Delivery Worldwide</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Box Office Mojo</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Find Movies Box Office Data</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">CommiXology</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Thousands of Digital Comics</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">DP Review</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Digital Photography</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Fabric</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Sewing, Quilting & Knitting</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Goodreads</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Book review & recomondations</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">IMDb</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Movies, TV & Celebrities</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+				</tr>
+				<tr class="footer-detail3-4">
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">IMDbPro</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Get Info Entertainment Professionals Need</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Kindle Direct Publishing</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">indie Digital & Print Publishing Made Easy</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Amazon Photos</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Unlimited Photo Storage Free with Prime</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Prime Video Direct</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Video Distribution Made Easy</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Shopbop</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Design Fashion Brands</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Warehouse</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Great Deals on Quality Used Products</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Whole Foods Market</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">India's Healthiest Grocery Store</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+				</tr>
+				<tr class="footer-detail3-5">
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Woot!</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Deals and Shenanigans</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Zappos</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Shoes & Clothing</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Ring</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Smart Home Security System</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">eero WiFi</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Stream 4k Video in Every Room</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Blink</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Smart Security for Every Home</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">Neighbors App</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Real-Time Crime & Safety Alerts<td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Subscription Boxes</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Top subscription boxes right to your door</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+				</tr>
+				<tr class="footer-detail3-6">
+					<td class="footer-detail3">
+						
+					</td>
+					<td class="footer-detail3">
+						
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">PillPack</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Pharmacy Simplified</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+						<a href="#"><table>
+							<tr>
+								<td class="footer-detail3-subpart1">M_Art Renewed</td>
+							</tr>
+							<tr>
+								<td class="footer-detail3-subpart2">Like-new products you can trust</td>
+							</tr>
+						</table>
+						</a>
+					</td>
+					<td class="footer-detail3">
+					</td>
+					<td class="footer-detail3">
+					</td>
+					<td class="footer-detail3">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="footer-detail4" align="center">
+			<table>
+				<tr class="footer-detail4">
+					<td><a class="footer-detail4" href="#">Condition of Use</a></td>
+					<td><a class="footer-detail4" href="#">Privacy Notice</a></td>
+					<td><a class="footer-detail4" href="#">Your Ads Privacy Choice</a></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">&copy; 1996-2023, Amazon.com, Inc. or its affiliates</td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+</body>
+</html>

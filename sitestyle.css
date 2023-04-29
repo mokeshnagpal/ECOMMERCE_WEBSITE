@@ -1,0 +1,998 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+body
+{
+	overflow-x: hidden;
+}
+nav.line1
+{
+	background-color: #b3ecff;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	width: 99.8vw;
+	height: 80px;
+}
+/*mart logo */
+span.logo
+{
+	position: absolute;
+	top: 15px;
+	left:0px;
+}
+img.logo
+{
+	width: 70px;
+}
+
+/*location*/
+table.location
+{
+	position: absolute;
+	padding-left: 10px;
+	padding-right: 20px;
+	left: 75px;
+	top: 20px;
+	background-color: #b3ecff;
+	width: 176px;
+}
+a.location
+{
+	vertical-align: center;
+}
+img.location
+{
+	width: 20px;
+}
+table.location
+{
+	display: inline-block;
+}
+
+/*drop down search */
+div.search
+{
+	position: absolute;
+	top:15px;
+	left:255px;
+}
+td.dropdown
+{
+	position: relative;     /*positioning of the ALL button*/
+	cursor:pointer;
+}
+img.arrow
+{
+	width:20px;
+}
+span.drop-button
+{
+	width: 75px;
+	display: block;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+  background-color: #ebc034;
+  color: black;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+}
+div.dropdown-content
+{
+	display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 47px;
+  left: 4px;
+  border-radius: 5px;
+}
+div.drop-val-change
+{
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Show the dropdown menu on hover */
+td.dropdown:hover div.dropdown-content {display: block;}    /*using dropdown of the td*/
+/* Change the background color of the dropdown button when the dropdown content is shown */
+td.dropdown:hover span.drop-button {background-color: #e8b717;}
+
+/*Input search box*/
+input.search						/*positioning of the input search*/
+{
+	height: 35px;
+	border: none;
+	position: relative;
+	padding: 23.5px;
+	right: 2px;
+	outline: none;
+	width: auto;
+}
+/*search button*/
+img.search
+{
+	width: 20px;
+}
+button.search
+{
+	background-color: #ebc034;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 11.5px;
+	border: none;
+	position: relative;
+	right: 3px;
+}
+button.search:hover {background-color: #e8b717;}
+/*language */
+span.lang-button
+{
+	display: block;
+	width: 70px;
+  color: black;
+  padding: 12px;
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  left: 1120px;
+  cursor: pointer;
+  margin-bottom: -15px;
+}
+div.lang-dropdown
+{
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  top: 65px;
+  right: 250px;
+  display: none;
+}
+/* Show the dropdown menu on hover */
+div.lang:hover div.lang-dropdown{display: block;}  /*create a element to hover and its effect takes place inside that elemnet in its child*/
+/* Change color of dropdown links on hover */
+div.lang-val
+{
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*account and order*/
+span.account,span.order
+{
+	display: inline-block;
+	cursor: pointer;
+}
+span.account
+{
+	position: absolute;
+	top: 20px;
+	left: 1190px;
+	display: block;
+	width: 145px;
+}
+span.order
+{
+	position: absolute;
+	top: 20px;
+	left: 1345px;
+	display: block;
+	width: 80px;
+}
+
+/*cart*/
+span.cart
+{
+	position: absolute;
+	top: 10px;
+	left: 1435px;
+}
+img.cart
+{
+	cursor: pointer;
+	width: 80px;
+	height: 50px;
+	padding-top: 6px;
+	position: relative;
+}
+/*nav line2*/
+
+nav.line2
+{
+	background-color: #b3c6ff;
+	margin-top: -5px;
+	height: 60px;
+	position: absolute;
+	top: 80px;
+	width: 99.8vw;
+}
+
+/*All2*/
+div.All2
+{
+	cursor: pointer;
+	margin-top:5px;
+	margin-left: 10px;
+	width: 85px;
+	height: 50px;
+	padding-left: 10px;
+	padding-top: 10px;
+	display: inline-block;
+	position: absolute;
+	top:-2px;
+}
+div.hamburger{
+  width: 28px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+}
+div.All2-hamburger
+{
+	display: inline-block;
+}
+span.All2
+{
+	position: relative;
+	bottom: 15px;
+	padding-left: 10px;
+}
+div.All2:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+/*Today's deal,buyagain,customerservice,giftcards,registry,sell*/
+span.todaysdeal,span.buyagain,span.customerservice,span.giftcards,span.registry,span.sell
+{
+	position: absolute;
+	top: 5px;
+	left: 100px;
+	padding: 15px;
+}
+span.buyagain
+{
+	left: 210px;
+}
+span.customerservice
+{
+	left: 310px;
+}
+span.giftcards
+{
+	left: 460px;
+}
+span.registry
+{
+	left: 560px;
+}
+span.sell
+{
+	left: 650px;
+}
+span.todaysdeal:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+span.buyagain:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+span.customerservice:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+span.giftcards:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+span.registry:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+span.sell:hover 
+{
+	border-radius: 5px;
+	border: 1px solid white;
+}
+
+
+
+/*automatic slideshow*/
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+
+/*image to blur*/
+.slide-img
+{
+	height: 60%;
+	width: 99.1vw;
+}
+
+
+/*image blur*/
+/* Slideshow container */
+
+    .slideshow-container {
+      position: absolute;
+      top: 135px;
+      display: inline-block;
+  		margin: auto;    }
+
+    .slideshow-container:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0.15) 15%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.25) 25%, rgba(255,255,255,0.3) 30%, rgba(255,255,255,0.35) 35%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.45) 45%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.55) 55%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,0.65) 65%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0.75) 75%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,0.85) 85%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,0.95) 95%, rgba(255,255,255,1) 100%);
+    }
+
+/*table on image*/
+/*general */
+div.main
+{
+	position: absolute;
+	top: 700px;
+	left: -14px;
+}
+table.table-on-image
+{
+	position: absolute;
+	top: -300px;
+}
+table.pick-where-you-left,table.table-on-image
+{
+	z-index: 3;
+	position: relative;
+	overflow: hidden;
+}
+td.caption,div.caption
+{
+	font-weight: bolder;
+	font-size: 20px;
+}
+td.box-on-image
+{
+	background-color: white;
+	padding: 10px;
+}
+/*Padding for frequently purchased and best seller area*/
+td.fp-caption,td.bsk-caption,td.bsc-caption,td.bsb-caption,td.bss-caption,td.bro-caption,div.frequently-purchased-container,div.best-seller-kitchen-container,div.best-seller-cellphone-container,div.best-seller-books-container,div.best-seller-sports-container,div.bro-container
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+table.pick-where-you-left,table.keep-shopping-for,table.get-fit-at-home,table.top-deal,table.shop-by-category,table.dresses,table.easy-return,table.electronics,table.strip-lights,table.holiday-home,table.smartwatches,table.fitness
+{
+	background-color: white;
+	padding: 20px;
+	width: 350px;
+}
+img.pick-where-you-left-image,img.keep-shopping-for-image,img.get-fit-at-home-image,img.top-deal-image,img.shop-by-category-image,img.shop-by-category-image,img.dresses-image,img.easy-return-image,img.electronics-image,img.strip-lights-image,img.holiday-home-image,img.fitness-image
+{
+	width: 100%;
+	cursor: pointer;
+}
+img.smartwatches-image
+{
+	width: 93.5%;
+}
+
+
+/*Height for frequently purchased and best seller area*/
+td.fp,td.bsk,td.bsc,td.bsb,td.bss,td.bro
+{
+	height: 270px;
+}
+/*frequently purchased*/
+div.frequently-purchased-container {
+  white-space: nowrap; /* Prevents images from wrapping */
+  position: absolute; /* To position buttons */
+  top: 1127px;
+  display: flex;
+  overflow-x: hidden;
+  width: 94.4%;
+  }
+
+img.frequently-purchased {
+  width: 200px; /* Or whatever size you want */
+  height: auto;
+}
+
+button.frequently-purchased-button-right {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 57px;
+  top: 1227px;
+  z-index: 3;
+}
+button.frequently-purchased-button-left {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; 
+  user-select: none;
+  z-index: 3;
+  left: 50px;
+  top: 1227px;
+}
+button.frequently-purchased-button-right:hover
+{
+	background-color: black;
+	border-radius: 3px 0px 0px 3px;
+}
+button.frequently-purchased-button-left:hover
+{
+	background-color: black;
+	border-radius: 0 3px 3px 0;
+}
+/*best-seller*/
+div.best-seller-kitchen-container {
+  white-space: nowrap; /* Prevents images from wrapping */
+  position: absolute; /* To position buttons */
+  top: 1475px;
+  display: flex;
+  overflow-x: hidden;
+  width: 94.4%;
+    }
+
+img.best-seller-kitchen {
+  width: 200px; /* Or whatever size you want */
+  height: auto;
+}
+
+button.best-seller-kitchen-button-right {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 57px;
+  top: 1575px;
+  z-index: 3;
+}
+button.best-seller-kitchen-button-left {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; 
+  user-select: none;
+  z-index: 3;
+  left: 50px;
+  top: 1575px;
+}
+button.best-seller-kitchen-button-right:hover
+{
+	background-color: black;
+	border-radius: 3px 0px 0px 3px;
+}
+button.best-seller-kitchen-button-left:hover
+{
+	background-color: black;
+	border-radius: 0 3px 3px 0;
+}
+/*best-seller-cellphone*/
+div.best-seller-cellphone-container {
+  white-space: nowrap; /* Prevents images from wrapping */
+  position: absolute; /* To position buttons */
+  top: 2359px;
+  display: flex;
+  overflow-x: hidden;
+  width: 94.4%;
+    }
+
+img.best-seller-cellphone {
+  width: 200px; /* Or whatever size you want */
+  height: auto;
+}
+
+button.best-seller-cellphone-button-right {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 57px;
+  top: 2459px;
+  z-index: 3;
+}
+button.best-seller-cellphone-button-left {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; 
+  user-select: none;
+  z-index: 3;
+  left: 50px;
+  top: 2459px;
+}
+button.best-seller-cellphone-button-right:hover
+{
+	background-color: black;
+	border-radius: 3px 0px 0px 3px;
+}
+button.best-seller-cellphone-button-left:hover
+{
+	background-color: black;
+	border-radius: 0 3px 3px 0;
+}
+/*best-seller-books*/
+div.best-seller-books-container {
+  white-space: nowrap; /* Prevents images from wrapping */
+  position: absolute; /* To position buttons */
+  top: 2711px;
+  display: flex;
+  overflow-x: hidden;
+  width: 94.4%;
+    }
+
+img.best-seller-books {
+  width: 200px; /* Or whatever size you want */
+  height: auto;
+}
+
+button.best-seller-books-button-right {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 57px;
+  top: 2811px;
+  z-index: 3;
+}
+button.best-seller-books-button-left {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; 
+  user-select: none;
+  z-index: 3;
+  left: 50px;
+  top: 2811px;
+}
+button.best-seller-books-button-right:hover
+{
+	background-color: black;
+	border-radius: 3px 0px 0px 3px;
+}
+button.best-seller-books-button-left:hover
+{
+	background-color: black;
+	border-radius: 0 3px 3px 0;
+}
+/*best-seller-sports*/
+div.best-seller-sports-container {
+  white-space: nowrap; /* Prevents images from wrapping */
+  position: absolute; /* To position buttons */
+  top: 3066px;
+  display: flex;
+  overflow-x: hidden;
+  width: 94.4%;
+    }
+
+img.best-seller-sports {
+  width: 200px; /* Or whatever size you want */
+  height: auto;
+}
+
+button.best-seller-sports-button-right {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 57px;
+  top: 3166px;
+  z-index: 3;
+}
+button.best-seller-sports-button-left {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; 
+  user-select: none;
+  z-index: 3;
+  left: 50px;
+  top: 3166px;
+}
+button.best-seller-sports-button-right:hover
+{
+	background-color: black;
+	border-radius: 3px 0px 0px 3px;
+}
+button.best-seller-sports-button-left:hover
+{
+	background-color: black;
+	border-radius: 0 3px 3px 0;
+}
+/*browsing history*/
+div.bro-container {
+  white-space: nowrap; /* Prevents images from wrapping */
+  position: absolute; /* To position buttons */
+  top: 3419px;
+  display: flex;
+  overflow-x: hidden;
+  width: 94.4%;
+    }
+
+img.bro {
+  width: 200px; /* Or whatever size you want */
+  height: auto;
+}
+
+button.bro-button-right {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 57px;
+  top: 3519px;
+  z-index: 3;
+}
+button.bro-button-left {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; 
+  user-select: none;
+  z-index: 3;
+  left: 50px;
+  top: 3519px;
+}
+button.bro-button-right:hover
+{
+	background-color: black;
+	border-radius: 3px 0px 0px 3px;
+}
+button.bro-button-left:hover
+{
+	background-color: black;
+	border-radius: 0 3px 3px 0;
+}
+
+/*footer*/
+div.back-to-top
+{
+	background-color: #37475A;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: absolute;
+	top: 4150px;
+	width: 99.8vw;
+	color: white;
+	cursor: pointer;
+}
+div.footer-detail
+{
+	position: absolute;
+	top: 4198px;
+	width: 99.8vw;
+	background-color: #232F3E;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+td.footer-detail
+{
+	width: 200px;
+	font-weight: bolder;
+}
+tr.footer-detail
+{
+	font-size: 12px;
+}
+table.footer-detail tr td 
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+hr.footer-detail2
+{
+	position: absolute;
+	width: 99.8vw;
+	color: grey;
+	top: 4515px;
+}
+div.footer-detail2
+{
+	position: absolute;
+	width: 99.8vw;
+	color: white;
+	top: 4517px;
+	background-color: #232F3E;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+span.footer-logo
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	cursor: pointer;
+}
+
+button.footer-detail2-lang,button.footer-detail2-currency,button.footer-detail2-country
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 5px;
+	color: #232F3E;
+}
+div.footer-detail3
+{
+	position: absolute;
+	width: 99.8vw;
+	color: white;
+	top: 4614px;
+	background-color: #131A22;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+td.footer-detail3
+{
+	width: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 10px;
+	height: 85px;
+}
+tr.footer-detail3-1 td.footer-detail3-subpart1
+{
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	color: white;
+}
+tr.footer-detail3-1  td.footer-detail3-subpart2
+{
+	color: grey;
+	position: absolute;
+	top: 65px;
+	height: 20px;
+	width: 120px;
+}
+tr.footer-detail3-2 td.footer-detail3-subpart1
+{
+	width: 120px;
+	position: absolute;
+	top: 120px;
+	color: white;
+}
+tr.footer-detail3-2  td.footer-detail3-subpart2
+{
+	color: grey;
+	position: absolute;
+	top: 135px;
+	height: 20px;
+	width: 120px;
+}
+tr.footer-detail3-3 td.footer-detail3-subpart1
+{
+	width: 120px;
+	position: absolute;
+	top: 190px;
+	color: white;
+}
+tr.footer-detail3-3  td.footer-detail3-subpart2
+{
+	color: grey;
+	position: absolute;
+	top: 205px;
+	height: 20px;
+	width: 120px;
+}
+tr.footer-detail3-4 td.footer-detail3-subpart1
+{
+	width: 120px;
+	position: absolute;
+	top: 260px;
+	color: white;
+}
+tr.footer-detail3-4  td.footer-detail3-subpart2
+{
+	color: grey;
+	position: absolute;
+	top: 275px;
+	height: 20px;
+	width: 120px;
+}
+tr.footer-detail3-5 td.footer-detail3-subpart1
+{
+	width: 120px;
+	position: absolute;
+	top: 330px;
+	color: white;
+}
+tr.footer-detail3-5  td.footer-detail3-subpart2
+{
+	color: grey;
+	position: absolute;
+	top: 345px;
+	height: 20px;
+	width: 120px;
+}
+tr.footer-detail3-6 td.footer-detail3-subpart1
+{
+	width: 120px;
+	position: absolute;
+	top: 400px;
+	color: white;
+}
+tr.footer-detail3-6  td.footer-detail3-subpart2
+{
+	color: grey;
+	position: absolute;
+	top: 415px;
+	height: 20px;
+	width: 120px;
+}
+div.footer-detail4
+{
+	position: absolute;
+	width: 99.8vw;
+	color: white;
+	top: 5100px;
+	background-color: #131A22;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+a.footer-detail4
+{
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+a.footer-detail4:hover
+{
+	text-decoration: underline;
+}

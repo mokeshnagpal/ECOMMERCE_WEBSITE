@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"\>
+	<title>M-ART</title>
+	<script type="text/javascript" src="signuplogic.js"></script>
+	<link rel="stylesheet" type="text/css" href="signupcss.css">
+</head>
+<body onload="reset()">
+	<table align="center" onload="reset()">
+		<tr>
+			<th class="logo" colspan="2">
+			<img src="logo.png"/></th>
+		</tr>
+		<tr>
+			<th width="400" colspan="2" class="web">M_Art.com</th>
+		</tr>
+		<tr>
+			<td>First name - </td>
+			<td align="center"><input onfocusout="fname()" type="text" size="35" id="ff" placeholder="First Name" required/>
+		</tr>
+		<tr>
+			<td>Middle name - </td>
+			<td align="center"><input onfocusout="mname()" type="text" size="35" id="fmn" placeholder="Middle Name"/>
+		</tr>
+		<tr>
+			<td>Last name - </td>
+			<td align="center"><input onfocusout="lname()" type="text" size="35" id="fl" placeholder="Last Name" required />
+		</tr>
+		<tr>
+			<td>Email - </td>
+			<td align="center"><input onfocusout="mail()" size="35" id="fm" placeholder="example@gmail.com"/></td>
+		</tr>
+		<tr>
+			<td>Password - </td>
+			<td align="center"><input onfocusout="pass()" type="text" size="35" id="fp" placeholder="Atleast 6 character" required />
+		</tr>
+		<tr>
+			<td>Confirm password - </td>
+			<td align="center"><input onfocusout="passmatch()" type="text" size="35" id="fcp" placeholder="Confirm password" required />
+		</tr>
+		<tr>
+			<td colspan="2"><span id="disp" style="display: none;"><i>i</i>&nbsp;&nbsp;<span id="out" value="a">a</span></span></td>
+		</tr>
+		<tr>
+			<td class="but" colspan="2" onclick="fname();mname();lname();mail();pass();
+			passmatch();openweb();"><button>Sign up</button></td>
+		</tr>
+		<tr><td class="log" colspan="2" >Have an account?<a href="">Log in</a></td></tr>
+	</table>
+<footer></footer>
+</body>
+</html>
